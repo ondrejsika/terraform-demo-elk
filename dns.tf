@@ -1,7 +1,7 @@
 resource "cloudflare_record" "elk" {
   zone_id = local.sikademo_com_zone_id
 
-  name    = "elk"
+  name    = "elk-docker"
   value   = digitalocean_droplet.elk.ipv4_address
   type    = "A"
   proxied = false

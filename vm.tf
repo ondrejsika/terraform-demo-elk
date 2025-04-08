@@ -1,6 +1,6 @@
 resource "digitalocean_droplet" "elk" {
   image  = "docker-20-04"
-  name   = "demo-elk"
+  name   = "demo-elk-docker"
   region = "fra1"
   size   = "s-2vcpu-4gb"
   ssh_keys = [
