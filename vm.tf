@@ -12,12 +12,12 @@ apt-get update
 apt-get install -y wget
 mkdir /traefik
 cd /traefik
-wget https://raw.githubusercontent.com/ondrejsika/traefik-le/master/docker-compose.yml
+wget https://raw.githubusercontent.com/ondrejsika/traefik-le/master/compose.yml
 docker-compose up -d
 mkdir /elk
 cd /elk
-wget https://raw.githubusercontent.com/ondrejsika/elk-training/master/elk/docker/elk-traefik/docker-compose.yml
-wget https://raw.githubusercontent.com/ondrejsika/elk-training/master/elk/docker/elk-traefik/docker-compose.ports.yml
-docker-compose -f docker-compose.yml -f docker-compose.ports.yml up -d
+wget https://raw.githubusercontent.com/ondrejsika/elk-training/master/elk/docker/elk-traefik/compose.yml
+wget https://raw.githubusercontent.com/ondrejsika/elk-training/master/elk/docker/elk-traefik/compose.ports.yml
+docker-compose -f compose.yml -f compose.ports.yml up -d
 EOF
 }
