@@ -1,5 +1,5 @@
 resource "digitalocean_droplet" "elk" {
-  image  = "docker-18-04"
+  image  = "docker-20-04"
   name   = "demo-elk"
   region = "fra1"
   size   = "s-2vcpu-4gb"
