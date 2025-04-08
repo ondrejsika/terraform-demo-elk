@@ -12,7 +12,7 @@ apt-get update
 apt-get install -y wget
 mkdir /traefik
 cd /traefik
-wget https://raw.githubusercontent.com/ondrejsika/traefik-le/master/compose.yml
+wget https://raw.githubusercontent.com/ondrejsika/ondrejsika-docker-traefik/master/compose.https-le-web.yml -O compose.yml
 docker compose up -d
 mkdir /elk
 cd /elk
