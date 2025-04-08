@@ -1,8 +1,30 @@
-.state
+# Mac
 .DS_Store
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Generic
+*.log
+*.backup
+*.local.sh
+*.local.yml
+*.local.yaml
+*.local.json
+*.local.txt
+
+# Terraform
 .terraform
 *.tfstate
-terraform.tfvars
 .terraform.tfstate.lock.info
-*.backup
-*.log
+*.tfvars
+!*.EXAMPLE.tfvars
+override.tf
+
+# Infracost
+.infracost
+.infracost-reports
